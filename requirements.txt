@@ -1,5 +1,5 @@
 av
-opencv-python
+opencv-python-headless
 keras
 tensorflow
 numpy
