@@ -1,14 +1,14 @@
-import av
-import streamlit as st
-import cv2
-import numpy as np
-from keras.models import load_model
-from keras.preprocessing import image
-from PIL import Image
-from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, RTCConfiguration, WebRtcMode
-import pandas as pd
-import time
-from io import BytesIO
+import av # type: ignore
+import streamlit as st# type: ignore
+import cv2# type: ignore
+import numpy as np # type: ignore
+from keras.models import load_model # type: ignore
+from keras.preprocessing import image # type: ignore
+from PIL import Image # type: ignore
+from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, RTCConfiguration, WebRtcMode # type: ignore
+import pandas as pd # type: ignore
+import time # type: ignore
+from io import BytesIO # type: ignore
 
 
 # Konfigurasi awal halaman Streamlit
