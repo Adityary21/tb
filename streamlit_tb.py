@@ -109,9 +109,9 @@ def show_loading_message(message):
 
 
 # Memuat model AI
-model_tb = load_model('C:\\Users\\user\\appdata\\keras_model_(new).h5')
-model_covid = load_model('C:\\Users\\user\\appdata\\model_covid.h5')
-model_pneumonia = load_model('C:\\Users\\user\\appdata\\keras_model_pneumonia.h5')
+model_tb = load_model('keras_model_(new).h5')
+model_covid = load_model('model_covid.h5')
+model_pneumonia = load_model('keras_model_pneumonia.h5')
 
 
 
