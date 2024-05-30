@@ -5,3 +5,4 @@ tensorflow
 numpy
 pandas
 streamlit
+streamlit_webrtc
