@@ -122,7 +122,7 @@ class VideoTransformer(VideoTransformerBase):
 
     def recv(self, frame):
         # Logika untuk mengolah frame video dan melakukan prediksi
-        class_names = [line.strip() for line in open("C://Users//user//AppData//labels(new).txt", "r").readlines()]
+        class_names = [line.strip() for line in open("labels(new).txt", "r").readlines()]
         image = frame.to_ndarray(format="bgr24")
         # Resize dan preprosses gambar
         resized_image = cv2.resize(image, (224, 224), interpolation=cv2.INTER_AREA)
@@ -130,7 +130,7 @@ class VideoTransformer(VideoTransformerBase):
         image_array = (image_array / 127.5) - 1
 
         # membuat prediksi
-        prediction = model_covid.predict(image_array)
+        prediction = model_tb.predict(image_array)
         index = np.argmax(prediction)
         class_name = class_names[index]
         confidence_score = prediction[0][index]
