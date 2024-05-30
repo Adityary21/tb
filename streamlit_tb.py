@@ -6,7 +6,6 @@ from keras.models import load_model
 from keras.preprocessing import image
 from PIL import Image
 from streamlit_webrtc import webrtc_streamer, VideoTransformerBase, RTCConfiguration, WebRtcMode
-from streamlit_drawable_canvas import st_canvas
 import pandas as pd
 import time
 from io import BytesIO
@@ -217,7 +216,7 @@ def prediksi_gambar_pneumonia(file_path):
     }
 
     return hasil
-canvas_result = None
+
 
 
 
@@ -343,34 +342,6 @@ elif halaman_terpilih == "Edit Gambar":
     st.title("Edit Gambar")
     st.markdown("---")
     st.write("Halaman Edit gambar ini untuk menyoroti dan menganalisis aspek penting dari gambar rontgen Anda, membuka wawasan baru dalam setiap detail.")
-
-    drawing_mode = st.sidebar.selectbox(
-    "Drawing tool:", ("point", "freedraw", "line", "rect", "circle", "transform")
-    )
-    stroke_width = st.sidebar.slider("Stroke width: ", 1, 25, 3)
-    if drawing_mode == 'point':
-        point_display_radius = st.sidebar.slider("Point display radius: ", 1, 25, 3)
-    stroke_color = st.sidebar.color_picker("Stroke color hex: ")
-    bg_color = st.sidebar.color_picker("Background color hex: ", "#eee")
-    bg_image = st.file_uploader("Background image:", type=["png", "jpg"])
-
-    realtime_update = st.sidebar.checkbox("Update in realtime", True)
-
-    # membuat canvas
-    if bg_image:
-        canvas_result = st_canvas(
-            fill_color="rgba(255, 165, 0, 0.3)",  
-            stroke_width=stroke_width,
-            stroke_color=stroke_color,
-            background_color=bg_color,
-            background_image=Image.open(bg_image) if bg_image else None,
-            update_streamlit=realtime_update,
-            height=550,
-            width=850,
-            drawing_mode=drawing_mode,
-            point_display_radius=point_display_radius if drawing_mode == 'point' else 0,
-            key="canvas",
-        )
 
 
         
