@@ -6,6 +6,5 @@ numpy
 pandas
 streamlit
 streamlit_webrtc
-streamlit-drawable-canvas
 time
 io
