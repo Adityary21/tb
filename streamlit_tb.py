@@ -385,11 +385,11 @@ else:
 
     # Daftar gambar, judul, dan caption
     images_info = [
-        {'path': 'C:\\Users\\user\\image_TB\\Vocab.png', 'title': 'Vocab Image', 'caption': 'Model AI ini dibagi menjadi data pelatihan (85%) dan data pengujian (15%).'},
-        {'path': 'C:\\Users\\user\\image_TB\\Matrix.png', 'title': 'Confusion Matrix', 'caption': 'Confusion Matrix membantu memahami sebuah sistem klasifikasi dengan membandingkan kebenaran prediksi sistem dengan hasil yang diharapkan. Gambar ini merupakan confusion matrix untuk dua kelas kasus: normal dan tuberculosis.'},
-        {'path': 'C:\\Users\\user\\image_TB\\Acc.png', 'title': 'Accuracy', 'caption': 'Untuk kelas "tb", akurasi yang dicapai adalah 0.97 dengan 105 sampel.Untuk kelas "non-tb", akurasi yang dicapai adalah 1.0 dengan 525 sampel. Ini menunjukkan bahwa model memiliki kinerja yang sangat baik dalam mengklasifikasikan sampel "non-tb".'},
-        {'path': 'C:\\Users\\user\\image_TB\\acc1.png', 'title': 'Accuracy EPOCH', 'caption': 'Model mencapai akurasi hampir 1.0 pada data pelatihan, yang menunjukkan bahwa model dengan baik mempelajari data pelatihan tersebut.Akurasi pada data pengujian berada di sekitar 0.9936, yang cukup tinggi dan menunjukkan bahwa model memiliki generalisasi yang baik pada data yang tidak pernah dilihat sebelumnya.'},
-        {'path': 'C:\\Users\\user\\image_TB\\loss.png', 'title': 'Loss EPOCH', 'caption': 'Kehilangan pada data pelatihan menurun hingga mendekati nol, yang menunjukkan bahwa model dengan baik memfitting data pelatihan.Kehilangan pada data pengujian juga menurun, tetapi ada beberapa fluktuasi. Ini mungkin menunjukkan beberapa tanda overfitting, tetapi karena akurasi pengujian masih tinggi, overfitting mungkin tidak terlalu parah.'},
+        {'path': 'Vocab.png', 'title': 'Vocab Image', 'caption': 'Model AI ini dibagi menjadi data pelatihan (85%) dan data pengujian (15%).'},
+        {'path': 'Matrix.png', 'title': 'Confusion Matrix', 'caption': 'Confusion Matrix membantu memahami sebuah sistem klasifikasi dengan membandingkan kebenaran prediksi sistem dengan hasil yang diharapkan. Gambar ini merupakan confusion matrix untuk dua kelas kasus: normal dan tuberculosis.'},
+        {'path': 'Acc.png', 'title': 'Accuracy', 'caption': 'Untuk kelas "tb", akurasi yang dicapai adalah 0.97 dengan 105 sampel.Untuk kelas "non-tb", akurasi yang dicapai adalah 1.0 dengan 525 sampel. Ini menunjukkan bahwa model memiliki kinerja yang sangat baik dalam mengklasifikasikan sampel "non-tb".'},
+        {'path': 'acc1.png', 'title': 'Accuracy EPOCH', 'caption': 'Model mencapai akurasi hampir 1.0 pada data pelatihan, yang menunjukkan bahwa model dengan baik mempelajari data pelatihan tersebut.Akurasi pada data pengujian berada di sekitar 0.9936, yang cukup tinggi dan menunjukkan bahwa model memiliki generalisasi yang baik pada data yang tidak pernah dilihat sebelumnya.'},
+        {'path': 'loss.png', 'title': 'Loss EPOCH', 'caption': 'Kehilangan pada data pelatihan menurun hingga mendekati nol, yang menunjukkan bahwa model dengan baik memfitting data pelatihan.Kehilangan pada data pengujian juga menurun, tetapi ada beberapa fluktuasi. Ini mungkin menunjukkan beberapa tanda overfitting, tetapi karena akurasi pengujian masih tinggi, overfitting mungkin tidak terlalu parah.'},
     ]
 
     # Menampilkan gambar dalam tabel
